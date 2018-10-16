@@ -3,15 +3,17 @@ export interface Page {
     title: string,
     content: string
   }
+
+export interface Pages {
+   pages: Page[]
+}
   
 interface PageDatabase {
     [id: number]: Page
   }
 
-export interface Pages { 
-    pages: Page[]
-}
-  
+
+
   const pagesById: PageDatabase = {
     1: {
       id: 1,
